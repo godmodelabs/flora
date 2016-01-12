@@ -33,10 +33,6 @@ describe('Request', function () {
         }))._status).to.equal('foo');
     });
 
-    it('should instantiate a _profiler', function () {
-        expect((new Request())._profiler).to.be.an('object');
-    });
-
     it('should store _httpRequest', function () {
         expect((new Request({
             _httpRequest: 'foo'
