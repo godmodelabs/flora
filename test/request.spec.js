@@ -27,12 +27,6 @@ describe('Request', function () {
         expect((new Request()).format).to.equal('json');
     });
 
-    it('should store _status', function () {
-        expect((new Request({
-            _status: 'foo'
-        }))._status).to.equal('foo');
-    });
-
     it('should store _httpRequest', function () {
         expect((new Request({
             _httpRequest: 'foo'
